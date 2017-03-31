@@ -71,7 +71,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -96,6 +96,6 @@ alias :q="exit"
 alias :Q="exit"
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
-alias rpush="rclone sync /home/xhenn/Documents/BFH onedrive:Documents/BFH --exclude \".directory\""
-alias rpull="rclone sync onedrive:Documents/BFH /home/xhenn/Documents/BFH --exclude \".directory\""
+alias rpush="rclone sync $HOME/Documents/BFH onedrive:Documents/BFH --exclude \".directory\""
+alias rpull="rclone sync onedrive:Documents/BFH $HOME/Documents/BFH --exclude \".directory\""
 alias bfh="cd $HOME/Documents/BFH"
