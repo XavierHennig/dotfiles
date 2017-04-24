@@ -19,6 +19,7 @@ Plugin 'tpope/vim-fugitive'			" git integration
 Plugin 'Raimondi/delimitMate'		" automatic parenthesis closing
 Plugin 'mhinz/vim-signify'			" Git modifications indicator
 Plugin 'JamshedVesuna/vim-markdown-preview'	" markdown preview
+Plugin 'scrooloose/nerdtree'		" explore filesystem and open files/diectories
 
 " VISUAL PLUGINS
 Plugin 'morhetz/gruvbox'			" gruvbox color scheme
