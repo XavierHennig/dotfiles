@@ -99,3 +99,5 @@ alias vimconfig="vim ~/.vimrc"
 alias rpush="rclone sync $HOME/Documents/BFH onedrive:Documents/BFH --exclude \".directory\"" -v
 alias rpull="rclone sync onedrive:Documents/BFH $HOME/Documents/BFH --exclude \".directory\"" -v
 alias bfh="cd $HOME/Documents/GoogleDrive/BFH"
+alias tren="trans"
+alias trfr="trans -t fr"
