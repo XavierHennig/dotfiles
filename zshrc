@@ -15,6 +15,8 @@ POWERLINE_RIGHT_A="mixed"
 POWERLINE_DATE_FORMAT="%D{%d-%m-%Y}"
 # Display ~ instead of /home/user
 POWERLINE_PATH="short"
+POWERLINE_HIDE_USER_NAME="true"
+POWERLINE_HIDE_HOST_NAME="true"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
