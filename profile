@@ -9,6 +9,7 @@
 
 export APP_HOME=/opt
 
-export JAVACC_HOME=$APP_HOME/javacc-6.0.1
+export JAVACC=$APP_HOME/javacc-6.0.1/bin
+export CODESONAR=$APP_HOME/codesonar-4.4p0/codesonar/bin
 
-export PATH=$JAVACC_HOME/bin:$PATH
+export PATH=$JAVACC:$CODESONAR:$PATH
