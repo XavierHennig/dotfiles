@@ -38,9 +38,21 @@ export EDITOR='vim'
 # fasd
 eval "$(fasd --init auto)"
 
+# colorized manpages
+man() {
+    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_me=$'\e[0m' \
+    LESS_TERMCAP_se=$'\e[0m' \
+    LESS_TERMCAP_so=$'\e[01;44;33m' \
+    LESS_TERMCAP_ue=$'\e[0m' \
+    LESS_TERMCAP_us=$'\e[01;32m' \
+    command man "$@"
+}
+
 # Example aliases
 alias syu="pacaur -Syu"
 alias open="xdg-open"
+alias o="xdg-open"
 alias Ss="pacaur -Ss"
 alias S="pacaur -S"
 alias Rs="pacaur -Rs"
@@ -52,5 +64,4 @@ alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias bfh="cd $HOME/Documents/GoogleDrive/BFH"
 alias i3config="vim $HOME/.config/i3/config"
-alias v="f -e vim"
-alias o="a -e xdg-open"
+#alias vim="nvim"
