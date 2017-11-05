@@ -23,6 +23,7 @@ Plugin 'JamshedVesuna/vim-markdown-preview'	" markdown preview
 Plugin 'scrooloose/nerdtree'		" explore filesystem and open files/diectories
 
 " PANDOC PLUGINS
+" Plugin 'euclio/vim-markdown-composer'
 " Plugin 'vim-pandoc/vim-pandoc'
 " Plugin 'vim-pandoc/vim-pandoc-syntax'
 
