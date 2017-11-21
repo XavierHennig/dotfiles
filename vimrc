@@ -21,6 +21,7 @@ Plugin 'Raimondi/delimitMate'		" automatic parenthesis closing
 Plugin 'mhinz/vim-signify'			" Git modifications indicator
 Plugin 'JamshedVesuna/vim-markdown-preview'	" markdown preview
 Plugin 'scrooloose/nerdtree'		" explore filesystem and open files/diectories
+Plugin 'Valloric/YouCompleteMe'		" auto completion
 
 " PANDOC PLUGINS
 " Plugin 'euclio/vim-markdown-composer'
@@ -29,7 +30,8 @@ Plugin 'scrooloose/nerdtree'		" explore filesystem and open files/diectories
 
 " VISUAL PLUGINS
 " Plugin 'morhetz/gruvbox'			" gruvbox color scheme
-Plugin 'sheerun/vim-wombat-scheme'	" wombat color scheme
+" Plugin 'sheerun/vim-wombat-scheme'	" wombat color scheme
+Plugin 'dracula/vim'				" dracula color scheme
 Plugin 'vim-airline/vim-airline'	" status/tabline
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -39,7 +41,7 @@ filetype plugin indent on    		" required
 
 " GRAPHIC
 " colorscheme gruvbox					" Enable gruvbox
-colorscheme wombat 					" Enable wombat
+colorscheme dracula					" Enable wombat
 set background=dark					" Set dark mode
 set laststatus=2					" Make the statusline appear all the time
 
@@ -59,3 +61,6 @@ let g:airline_theme='murmur'		" Select theme for airline
 :set guioptions-=L					" Remove left-hand scrollbar
 
 set wildmenu
+
+" MAPPING
+map <C-n> :NERDTreeToggle<CR>
