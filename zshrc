@@ -27,7 +27,8 @@ HYPHEN_INSENSITIVE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git mvn web-search per-directory-history)
+plugins=(git colored-man-pages python pip)
+#plugins=(git per-directory-history fasd) # disable perd-directory-history so fasd works with files
 
 source $ZSH/oh-my-zsh.sh
 
@@ -38,22 +39,13 @@ export EDITOR='vim'
 # fasd
 eval "$(fasd --init auto)"
 
-# colorized manpages
-man() {
-    LESS_TERMCAP_md=$'\e[01;31m' \
-    LESS_TERMCAP_me=$'\e[0m' \
-    LESS_TERMCAP_se=$'\e[0m' \
-    LESS_TERMCAP_so=$'\e[01;44;33m' \
-    LESS_TERMCAP_ue=$'\e[0m' \
-    LESS_TERMCAP_us=$'\e[01;32m' \
-    command man "$@"
-}
-
 # Example aliases
+alias l="ls -lAh"
 alias syu="pacaur -Syu"
 alias open="xdg-open"
 alias o="xdg-open"
 alias Ss="pacaur -Ss"
+alias pSs="pacman -Ss"
 alias S="pacaur -S"
 alias Rs="pacaur -Rs"
 alias Si="pacaur -Si"
@@ -64,4 +56,5 @@ alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias bfh="cd $HOME/Documents/GoogleDrive/BFH"
 alias i3config="vim $HOME/.config/i3/config"
-#alias vim="nvim"
+alias vim="nvim"
+alias less="less -N"
