@@ -7,6 +7,9 @@ set number							" show actual line number
 set relativenumber					" Enable line numbers
 set tabstop=4						" Make indent take 4 spaces
 set wrap linebreak nolist			" Wrap long lines without cutting in middle of a word
+set wildmenu
+set ignorecase          			" case insensitive searching
+set smartcase           			" but become case sensitive if you type uppercase characters
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -60,7 +63,6 @@ let g:airline_theme='murmur'		" Select theme for airline
 :set guioptions-=r					" Remove right-hand scrollbar
 :set guioptions-=L					" Remove left-hand scrollbar
 
-set wildmenu
 
 " MAPPING
 map <C-n> :NERDTreeToggle<CR>
