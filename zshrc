@@ -5,8 +5,8 @@ export ZSH=/home/xhenn/.oh-my-zsh
 ZSH_THEME="powerline"
 
 # POWERLINE settings
-# 
-# Display date or non-zero-exit-code 
+#
+# Display date or non-zero-exit-code
 POWERLINE_RIGHT_A="mixed"
 # Change date format
 POWERLINE_DATE_FORMAT="%D{%d-%m-%Y}"
@@ -19,16 +19,9 @@ POWERLINE_HIDE_HOST_NAME="true"
 # sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
 
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(git colored-man-pages python pip)
-#plugins=(git per-directory-history fasd) # disable perd-directory-history so fasd works with files
 
 source $ZSH/oh-my-zsh.sh
 
@@ -58,3 +51,7 @@ alias bfh="cd $HOME/Documents/GoogleDrive/BFH"
 alias i3config="vim $HOME/.config/i3/config"
 alias vim="nvim"
 alias less="less -N"
+alias btcd="bitcoind -daemon"
+alias btc="bitcoin-cli"
+alias btcs="bitcoin-cli stop"
+alias vm-bfh="ssh farinehennig@147.87.116.155"
