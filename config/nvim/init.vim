@@ -9,10 +9,6 @@ set softtabstop=4   						" sets the number of columns for a TAB
 set wrap linebreak nolist					" wrap long lines w/o cutting words
 set ignorecase								" case insensitive search
 set smartcase								" sensitive case search when uppercase character
-set guioptions-=m							" no menu bar
-set guioptions-=T							" no toolbar
-set guioptions-=r							" no right-hand scrollbar
-set guioptions-=L							" no left-hand scrollbar
 
 " vim-plug BEGIN
 call plug#begin()
@@ -55,7 +51,7 @@ call plug#end()
 " airline config
 let g:airline_powerline_fonts=1
 let g:airline_section_b='%{strftime("%d/%m/%y %H:%M")}  %{fugitive#head()}'
-let g:airline_theme='murmur'
+let g:airline_theme='base16'
 
 " THEME
 colorscheme base16-default-dark
