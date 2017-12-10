@@ -31,6 +31,9 @@ Plug 'Raimondi/delimitMate'
 " git modification indicator
 Plug 'mhinz/vim-signify'
 
+" comment lines faster
+Plug 'tpope/vim-commentary'
+
 " completion plugin
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py'}
 
@@ -43,6 +46,8 @@ Plug 'vim-airline/vim-airline-themes'
 
 " dracula color scheme
 Plug 'dracula/vim'
+" base16 color scheme
+Plug 'chriskempson/base16-vim'
 
 " vim-plug END
 call plug#end()
@@ -53,7 +58,7 @@ let g:airline_section_b='%{strftime("%d/%m/%y %H:%M")}  %{fugitive#head()}'
 let g:airline_theme='murmur'
 
 " THEME
-colorscheme dracula
+colorscheme base16-default-dark
 
 " MAPPING
 map <C-n> :NERDTreeToggle<CR>
