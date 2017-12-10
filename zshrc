@@ -27,7 +27,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # fasd
 eval "$(fasd --init auto)"
@@ -48,8 +48,8 @@ alias :Q="exit"
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias nvimconfig="nvim ~/.config/nvim/init.vim"
-alias bfh="cd $HOME/Documents/GoogleDrive/BFH"
 alias i3config="vim $HOME/.config/i3/config"
+alias bfh="cd $HOME/Documents/GoogleDrive/BFH"
 alias vim="nvim"
 alias n="nvim"
 alias less="less -N"
