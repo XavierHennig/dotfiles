@@ -56,5 +56,9 @@ let g:airline_theme='base16'
 " THEME
 colorscheme base16-default-dark
 
+" COMMANDS
+:command W w
+:command Q q
+
 " MAPPING
 map <C-n> :NERDTreeToggle<CR>
