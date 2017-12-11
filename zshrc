@@ -5,7 +5,6 @@ export ZSH=/home/xhenn/.oh-my-zsh
 ZSH_THEME="powerline"
 
 # POWERLINE settings
-#
 # Display date or non-zero-exit-code
 POWERLINE_RIGHT_A="mixed"
 # Change date format
