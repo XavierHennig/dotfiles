@@ -1,4 +1,4 @@
-filetype on									" recognize filetype extension
+filetype plugin indent on					" recognize filetype extension
 syntax on									" show colors
 set termguicolors							" 256 colors
 set number									" show line numbers
@@ -6,6 +6,8 @@ set relativenumber							" show relative line numbers
 set tabstop=4								" indents take 4 spaces
 set shiftwidth=4							" indents correspond to a single tab
 set softtabstop=4   						" sets the number of columns for a TAB
+set expandtab
+set autoindent
 set wrap linebreak nolist					" wrap long lines w/o cutting words
 set ignorecase								" case insensitive search
 set smartcase								" sensitive case search when uppercase character
@@ -25,7 +27,13 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Raimondi/delimitMate'
 
 " git modification indicator
-Plug 'mhinz/vim-signify'
+" Plug 'mhinz/vim-signify'
+
+" folding plugin
+Plug 'tmhedberg/SimpylFold'
+
+" syntax checking
+Plug 'vim-syntastic/syntastic'
 
 " comment lines faster
 Plug 'tpope/vim-commentary'
@@ -62,3 +70,7 @@ colorscheme base16-default-dark
 
 " MAPPING
 map <C-n> :NERDTreeToggle<CR>
+map <C-h> <C-w>h_
+map <C-j> <C-w>j_
+map <C-k> <C-w>k_
+map <C-l> <C-w>l_
