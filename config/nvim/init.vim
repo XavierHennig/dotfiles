@@ -56,6 +56,10 @@ Plug 'chriskempson/base16-vim'
 " vim-plug END
 call plug#end()
 
+" NERDTree config
+" close nvim if only window left is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " airline config
 let g:airline_powerline_fonts=1
 let g:airline_section_b='%{strftime("%d/%m/%y %H:%M")}  %{fugitive#head()}'
