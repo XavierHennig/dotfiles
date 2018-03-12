@@ -2,18 +2,31 @@
 export ZSH=/home/xhenn/.oh-my-zsh
 
 # set theme
-ZSH_THEME="powerline"
+ZSH_THEME="powerlevel9k"
+
+# POWERLEVEL9K settings
+# display only current folder
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+# display truncated folder
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
+# display error prompt colors
+POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
+POWERLEVEL9K_STATUS_ERROR_BACKGROUND="black"
+# modules displayed on bar
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs history time)
 
 # POWERLINE settings
 # Display date or non-zero-exit-code
-POWERLINE_RIGHT_A="mixed"
+# POWERLINE_RIGHT_A="mixed"
 # Change date format
-POWERLINE_DATE_FORMAT="%D{%d-%m-%Y}"
+# POWERLINE_DATE_FORMAT="%D{%d-%m-%Y}"
 # Display ~ instead of /home/user
-POWERLINE_PATH="short"
+# POWERLINE_PATH="short"
 #POWERLINE_CUSTOM_CURRENT_PATH="%3~"
-POWERLINE_HIDE_USER_NAME="true"
-POWERLINE_HIDE_HOST_NAME="true"
+# POWERLINE_HIDE_USER_NAME="true"
+# POWERLINE_HIDE_HOST_NAME="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -45,6 +58,7 @@ alias Si="pacaur -Si"
 alias Ql="pacaur -Ql"
 alias :q="exit"
 alias :Q="exit"
+alias q="exit"
 alias zshconfig="nvim ~/.zshrc"
 alias vimconfig="nvim ~/.vimrc"
 alias nvimconfig="nvim ~/.config/nvim/init.vim"
@@ -60,3 +74,4 @@ alias vm-bfh="ssh farinehennig@147.87.116.155"
 alias vpn-bfh="sudo vpnc bfh"
 alias vpn-bfh-disconnect="sudo vpnc-disconnect"
 alias vol="volatility"
+alias t="tree"
