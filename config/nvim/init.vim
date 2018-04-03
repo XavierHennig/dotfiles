@@ -23,6 +23,9 @@ Plug 'tpope/vim-fugitive'
 " explorer-like
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
+" git indication for nerdtree
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 " automatic parenthesises closing
 Plug 'Raimondi/delimitMate'
 
