@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/xhenn/.oh-my-zsh
 
+#export TERM="konsole"
+#export TERMINAL=$TERM
+
 # set theme
 ZSH_THEME="powerlevel9k"
 
@@ -9,7 +12,8 @@ ZSH_THEME="powerlevel9k"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 # display truncated folder
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
+# POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 # display error prompt colors
 POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
 POWERLEVEL9K_STATUS_ERROR_BACKGROUND="black"
@@ -66,7 +70,6 @@ alias i3config="nvim $HOME/.config/i3/config"
 alias bfh="cd $HOME/Documents/GoogleDrive/BFH"
 alias vim="nvim"
 alias n="nvim"
-alias less="less -N"
 alias btcd="bitcoind -daemon"
 alias btc="bitcoin-cli"
 alias btcs="bitcoin-cli stop"
