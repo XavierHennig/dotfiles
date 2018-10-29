@@ -19,7 +19,7 @@ POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
 POWERLEVEL9K_STATUS_ERROR_BACKGROUND="black"
 # modules displayed on bar
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs history time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs time)
 
 # POWERLINE settings
 # Display date or non-zero-exit-code
@@ -51,15 +51,15 @@ eval "$(fasd --init auto)"
 
 # Example aliases
 alias l="ls -lAh"
-alias syu="pacaur -Syu"
+alias syu="pikaur -Syu"
 alias open="xdg-open"
 alias o="xdg-open"
-alias Ss="pacaur -Ss"
+alias Ss="pikaur -Ss"
 alias pSs="pacman -Ss"
-alias S="pacaur -S"
-alias Rs="pacaur -Rs"
-alias Si="pacaur -Si"
-alias Ql="pacaur -Ql"
+alias S="pikaur -S"
+alias Rs="pikaur -Rs"
+alias Si="pikaur -Si"
+alias Ql="pikaur -Ql"
 alias :q="exit"
 alias :Q="exit"
 alias q="exit"
@@ -70,6 +70,8 @@ alias i3config="nvim $HOME/.config/i3/config"
 alias bfh="cd $HOME/Documents/GoogleDrive/BFH"
 alias vim="nvim"
 alias n="nvim"
+alias view="nvim -R"
+alias v="nvim -R"
 alias btcd="bitcoind -daemon"
 alias btc="bitcoin-cli"
 alias btcs="bitcoin-cli stop"
