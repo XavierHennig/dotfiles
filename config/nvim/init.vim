@@ -30,7 +30,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Raimondi/delimitMate'
 
 " git modification indicator
-" Plug 'mhinz/vim-signify'
+Plug 'mhinz/vim-signify'
 
 " folding plugin
 Plug 'tmhedberg/SimpylFold'
